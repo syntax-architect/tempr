@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HeatLedger AI — Industrial Heat-to-Customs Traceability, EN 10204 3.1 Mill Test Certificate (MTC), EU Reg 2026/1963 Melt-and-Pour, and EU/UK CBAM Compliance Platform for Indian Steel & Engineering Exporters." />
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heatledger.ai" />
+    <meta property="og:title" content="HeatLedger AI — Heat-to-Customs Traceability & CBAM Operating System" />
+    <meta property="og:description" content="Industrial mill test certificate verification, EN 10204 Clause 6 byte-identical original preservation, melt-and-pour proof, and CBAM specific embedded emissions ledger." />
+    <meta property="og:image" content="https://heatledger.ai/og-preview.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HeatLedger AI — Heat-to-Customs Traceability & CBAM Operating System" />
+    <meta name="twitter:description" content="Stop container detentions. Prepare audit-ready EN 10204 3.1 certificates and CBAM dossiers." />
+    <meta name="twitter:image" content="https://heatledger.ai/og-preview.png" />
+
+    <!-- Schema.org Organization JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "HeatLedger AI",
+        "url": "https://heatledger.ai",
+        "logo": "https://heatledger.ai/logo.png",
+        "description": "Industrial Heat-to-Customs Traceability and EU CBAM Compliance Operating System for steel and engineering exporters.",
+        "foundingLocation": "India",
+        "knowsAbout": ["CBAM Regulation (EU) 2023/956", "EN 10204 Metallic Products Inspection", "EU Sanctions Regulation (EU) 2023/1214"]
+      }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 90,25 90,75 50,95 10,75 10,25' fill='%23090D16' stroke='%2310B981' stroke-width='6'/><polygon points='50,22 75,37 75,63 50,78 25,63 25,37' fill='%23F59E0B' opacity='0.9'/><path d='M50,5 L50,95 M10,25 L90,75 M10,75 L90,25' stroke='%2310B981' stroke-width='2' opacity='0.4'/></svg>" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#10B981" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="HeatLedger" />
+    <title>HeatLedger AI — Heat-to-Customs Traceability & CBAM Operating System</title>
+    
+    <script>
+      try {
+        const stored = localStorage.getItem('hl_theme_mode') || localStorage.getItem('heatledger-theme');
+        const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = stored === 'dark' || (!stored && isSystemDark) || (stored === 'system' && isSystemDark) || (!stored);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+        } else {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.add('light');
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-obsidian text-slate-100 antialiased selection:bg-emerald-500 selection:text-obsidian-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+{
+  "name": "HeatLedger AI — Heat-to-Customs Operating System",
+  "short_name": "HeatLedger",
+  "id": "ai.heatledger.app",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0B1120",
+  "theme_color": "#10B981",
+  "description": "Industrial Heat-to-Customs Traceability, EN 10204 Clause 6 MTC Verification, and EU/UK CBAM Compliance Platform for Steel & Aluminum Exporters.",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='36' fill='%230B1120'/><polygon points='96,16 168,54 168,138 96,176 24,138 24,54' fill='%23090D16' stroke='%2310B981' stroke-width='8'/><polygon points='96,44 140,68 140,124 96,148 52,124 52,68' fill='%23F59E0B' opacity='0.9'/><path d='M96,16 L96,176 M24,54 L168,138 M24,138 L168,54' stroke='%2310B981' stroke-width='3' opacity='0.4'/></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='96' fill='%230B1120'/><polygon points='256,40 448,144 448,368 256,472 64,368 64,144' fill='%23090D16' stroke='%2310B981' stroke-width='18'/><polygon points='256,118 376,182 376,330 256,394 136,330 136,182' fill='%23F59E0B' opacity='0.9'/><path d='M256,40 L256,472 M64,144 L448,368 M64,368 L448,144' stroke='%2310B981' stroke-width='6' opacity='0.4'/></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "/app",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "files": [
+        {
+          "name": "certificate",
+          "accept": ["application/pdf", "image/*", ".pdf", ".jpg", ".png"]
+        }
+      ]
+    }
+  },
+  "shortcuts": [
+    {
+      "name": "QA Inspection Workbench",
+      "short_name": "Workbench",
+      "url": "/app?view=mtc-workbench",
+      "description": "Scan and verify mill test certificates"
+    },
+    {
+      "name": "CBAM Emissions Calculator",
+      "short_name": "Calculator",
+      "url": "/app?view=calculator",
+      "description": "Calculate embedded emissions and tax deltas"
+    }
+  ]
+}
